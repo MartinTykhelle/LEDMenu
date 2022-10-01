@@ -1,9 +1,3 @@
-# LEDMenu
-A simple menu system using a 14 segment display and a rotary encoder.
-
-The code is pretty primitive and avoids higher concepts such as mapping and remembering, this is all left up to the user
-# Usage
-```c++
 #include <LEDMenu.h>
 
 //address, encoder pin 1, encoder pin 2, button pin
@@ -32,7 +26,5 @@ void loop()
 {
   menu.poll();
 
-  Serial.println(menu.getVal(0)); //gets value for M 1, given as 0,1,2
-  Serial.println(menu.getVal(1)); //gets value for M 2, given as 0,1,2
+  Serial.println(menu.getVal(1)); //gets value for M 1, given as 1,2,3
 }
-```
