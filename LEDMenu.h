@@ -20,6 +20,7 @@ class LEDMenu
     void poll();
     uint8_t getVal(int menuItemIdx);
     uint8_t getVal(char menuItemName[]);
+    uint8_t getMenu();
 
   private:
     Adafruit_AlphaNum4 _alpha4;

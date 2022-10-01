@@ -57,6 +57,11 @@ uint8_t LEDMenu::getVal(int menuItemIdx) {
 
   return _menuValues[menuItemIdx];
 }
+
+uint8_t LEDMenu::getMenu() {
+
+  return _menuPosition;
+}
 uint8_t LEDMenu::getVal(char menuItemName[]) {
   for (uint8_t i = 0; i < arrayLength; i++) {
     if (strcmp(_menu[_menuCnt], menuItemName) == 0) {
