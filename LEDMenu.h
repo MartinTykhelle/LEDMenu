@@ -15,10 +15,12 @@ class LEDMenu
                         ,uint8_t _encButton);
     void addMenu(char menuItemName[]);
     void addVal(char menuItemVal[]);
+    void print(char string[]);
     void init();
     void poll();
     uint8_t getVal(int menuItemIdx);
     uint8_t getVal(char menuItemName[]);
+
   private:
     Adafruit_AlphaNum4 _alpha4;
     RotaryEncoder *_encoder = nullptr;

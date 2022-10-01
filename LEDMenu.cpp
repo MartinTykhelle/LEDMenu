@@ -43,6 +43,14 @@ void LEDMenu::addVal(char menuItemVal[]) {
   _menuValCnt[_menuCnt - 1]++;
 }
 
+void LEDMenu::print(char string[]){
+
+  _alpha4.writeDigitAscii(0, string[0]);
+  _alpha4.writeDigitAscii(1, string[1]);
+  _alpha4.writeDigitAscii(2, string[2]);
+  _alpha4.writeDigitAscii(3, string[3]);
+  _alpha4.writeDisplay();
+}
 
 
 uint8_t LEDMenu::getVal(int menuItemIdx) {
