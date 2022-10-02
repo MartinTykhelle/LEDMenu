@@ -1,8 +1,8 @@
 #include "LEDMenu.h"
 LEDMenu::LEDMenu(uint8_t displayAddress
-                         , uint8_t encPinA
-                         , uint8_t encPinB
-                         , uint8_t encButton)
+                 , uint8_t encPinA
+                 , uint8_t encPinB
+                 , uint8_t encButton)
 {
   _displayAddress = displayAddress;
   _encPinA = encPinA;
@@ -43,7 +43,7 @@ void LEDMenu::addVal(char menuItemVal[]) {
   _menuValCnt[_menuCnt - 1]++;
 }
 
-void LEDMenu::print(char string[]){
+void LEDMenu::print(char string[]) {
 
   _alpha4.writeDigitAscii(0, string[0]);
   _alpha4.writeDigitAscii(1, string[1]);
